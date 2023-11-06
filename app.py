@@ -20,8 +20,13 @@ with open('secret.json') as f:
 
 
 # Azureの認証情報の設定、ログイン
-KEY = secret['KEY']
-ENDPOINT = secret['ENDPOINT']
+#JSONファイルに記載した値を使用
+#KEY = secret['KEY']
+#ENDPOINT = secret['ENDPOINT']
+
+# streamlitの設定にて登録した値を使用
+KEY = st.secrets['KEY']
+ENDPOINT = st.secrets['ENDPOINT']
 computervision_client = ComputerVisionClient(ENDPOINT, CognitiveServicesCredentials(KEY))
 
 
