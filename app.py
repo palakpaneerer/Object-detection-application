@@ -15,8 +15,8 @@ from PIL import ImageFont
 
 
 # 秘密鍵、エンドポイントの情報を含むJSONファイルの読み込み
-with open('secret.json') as f:
-    secret = json.load(f)
+#with open('secret.json') as f:
+#    secret = json.load(f)
 
 
 # Azureの認証情報の設定、ログイン
